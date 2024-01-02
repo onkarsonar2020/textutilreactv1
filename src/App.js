@@ -68,7 +68,7 @@ return (
       {/* <Router> */}
         {/* In react-router-dom version 6, the Switch component is replaced with Routes, and the usage is slightly different. */}
         <Routes>
-          <Route exact path='/about' element={<About />} />
+          <Route exact path='/about' element={<About  mode={mode}/>} />
           <Route exact path='/' element={<TextForm heading="Enter the text to analyze" showAlert={showAlert} mode={mode} />} />
         </Routes>
       {/* </Router> */}

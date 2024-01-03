@@ -44,7 +44,7 @@ props.showAlert("Text coped","success");
         </div>
         <div className="container my-2" style={{color:props.mode==='dark' ? 'white':'black'}}>
             <h1>Your text summary</h1>
-            <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} word, {text.length} character</p>
+            <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} word, {text.length} character</p>
             <p>Avg time is {0.008*(text.split(" ").filter((element)=>{return element.length!==0}).length)} word per minute</p>
             <h2>Preview</h2>
             <p>{text.length>0?text:"Enter text to preview"}</p>
